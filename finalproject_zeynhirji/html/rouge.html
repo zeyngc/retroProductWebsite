@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<!-- using jquery to add metadata -->
+<head id="head">
+    <!-- meta desc and title change every page -->
+    <meta name="description" content="This is Rouge Rosette Brune released by Bourjois.">
+    <title>Rouge Rosette Brune by Bourjois</title>
+    <!-- adding js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+</head>
+<body>
+<!-- using global header -->
+<header id="header"></header>
+<main>
+    <!-- using figure so i can utilize figcaption -->
+    <figure>
+        <!-- product image -->
+        <img src="../img/victorianRouge.jpg" class="rouge-img" alt="Rouge Rosette Brune released by Bourjois distributed by Victorian Beauty Improvements">
+        <!-- product caption -->
+        <figcaption class="prod-caption">Rouge Rosette Brune released by Bourjois. Distributed by Victorian Beauty Improvements.</figcaption>
+    </figure>
+    <!-- price of product -->
+    <div class="prod-price">
+        <!-- using span to italicize certain text -->
+        <h2 class="prices">$24.99 <span class="shipping">+ Shipping</span></h2>
+        <!-- span was unused in the end but used to potentially alter body text -->
+        <p class="prod-desc"><span>English Made. 100% Natural. Rich Pink. Silky Red. Gorgeous Versatility. </span>Bourjois presents Rouge Rosette Brune, now only $24.99. Distributed by Victorian Beauty Improvements.</p>
+    </div>
+    <!-- button to add to cart (cart doesnt exist, could not figure out jquery for it) -->
+    <button type="submit" class="prod-submit">Add to Cart</button>
+</main>
+
+<!-- using global footer -->
+<footer id="footer"></footer>
+</body>
+</html>

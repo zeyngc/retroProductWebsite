@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<!-- using jquery for metadata -->
+<head id="head">
+    <!-- meta desc and title change every page -->
+    <meta name="description" content="This is the contact page for Victorian Beauty Improvements.">
+    <title>Contact | Victorian Beauty Improvements</title>
+    <!-- adding js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+</head>
+<body>
+
+<!-- using global header -->
+<header id="header"></header>
+<!-- parent of content form -->
+<div class="contact-parent">
+    <!-- subheader -->
+    <h2>Contact Us!</h2>
+    <!-- child of contact form section -->
+    <div class="contact-child">
+        <!-- contact info text -->
+        <p class="contact-text">If you have any questions or concerns about our products, we try to answer all inquiries within 48 hours. We can't wait to hear from you!</p>
+        <!-- contact form itself with inputs -->
+        <!-- no action used as no need to store vars -->
+        <form id="contact-form">
+            <!-- input for name, number, email, and message with a button at the bottom -->
+            <!-- using required to make all required -->
+            <input type="text" class="your-name" id="contact-name" required placeholder="Your Name">
+            <!-- making user enters a valid phone number, controlled by the pattern parameter -->
+            <input type="tel" class="your-number" id="contact-number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Number">
+            <input type="email" class="your-email" id="contact-email" required placeholder="Your Email">
+            <p class="contact-caption">Format: 123-456-7890</p>
+            <textarea required placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-contact">Send Us A Message!</button>
+        </form>
+    </div>
+</div>
+<!-- using global footer -->
+<footer id="footer"></footer>
+</body>
+</html>

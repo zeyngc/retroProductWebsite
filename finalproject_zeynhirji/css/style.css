@@ -1,0 +1,316 @@
+/* removing padding and margin and adding bg to main body of content on every page */
+body{
+    margin: 0;
+    padding: 0;
+    background: #aaaaaa;
+}
+/* changing font for every paragraph and figcaption */
+p, figcaption{
+    font-family: "IM Fell DW Pica", sans-serif;
+}
+/* changing font for every header size 1 2 4 5 */
+h1, h2, h4, h5{
+    font-family: "Cinzel Decorative", sans-serif;
+    font-size: 36px;
+}
+/* changing font for header size 3 (used for prices mostly) and header size 6 (footer) */
+h3, h6{
+    font-family: "IM Fell DW Pica", sans-serif;
+}
+/* changing font for prices marked by the class */
+.prices{
+    font-family: "Pinyon Script", sans-serif;
+}
+/* changing font and font weight for lists (used exclusively in the header) */
+li {
+    font-family: "IM Fell DW Pica", sans-serif;
+    font-weight: bolder;
+}
+/* header-item is each shared among each element of the list */
+.header-item{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2px 5px 2px 5px;
+    background-color: #000000;
+}
+/* when list elements are hovered over, inverse their colours */
+.header-item:hover{
+    color: #000000;
+    padding: 2px 5px 2px 5px;
+    background-color: #ffffff;
+}
+/* logo image in header */
+.logoImage{
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 11.55%;
+    height: 11.55%;
+}
+/* header bg colour (hidden) */
+.header{
+    background-color: #938e86;
+}
+/* background image for header and aligning the list */
+.navbar-header-list{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    background-image: url("../img/headerPattern.jpg");
+    background-size: cover;
+}
+/* shop item in list, used for spacing between options */
+.header-item1{
+    padding-bottom: 10px;
+}
+/* about item in list, used for spacing between options */
+.header-item2{
+    padding-bottom: 10px;
+}
+/* contact item in list, used for spacing between options */
+.header-item3{
+}
+/* list parent element */
+.header-list{
+    /* moving it around */
+    position: relative;
+    top: -25px;
+    right: 75px;
+    justify-content: center;
+    /* changing font size */
+    font-size: 24px;
+    /* removing background on parent as they are used in shared children element */
+    background: none;
+    /* removing underline and bullet point in list */
+    list-style-type: none;
+    text-decoration: none;
+}
+/* global footer styling */
+.footer{
+    align-content: center;
+    text-align: center;
+    background-color: #938e86;
+    /* keeps it at bottom */
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+}
+/* bg colour on hero headings */
+.hero{
+    background-color: #aaaaaa;
+}
+/* centering text and enlarging */
+.hero > h1{
+    text-align: center;
+    font-size: 40px;
+}
+/* moving text, centering, and changing size */
+.hero > p{
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 20px;
+}
+/* offsetting underline from text */
+.subheader{
+    text-underline-offset: 3px;
+}
+/* changing subheader font size */
+.subheader-font{
+    font-size: 20px;
+}
+/* index.html main content div, moving it around and adding bg colour */
+.index-content{
+    bottom: 10px;
+    position: relative;
+    background-color: #aaaaaa;
+    text-align: center;
+}
+/* resizing index images */
+.index-image{
+    width: 50vh;
+    height: 50vh;
+}
+.items{
+    margin: auto;
+}
+/* padding is used to space them apart, display inline-block is used on items to display them side by side */
+.arsenicWafers{
+    display: inline-block;
+    padding: 10px;
+}
+.victorianRouge{
+    display: inline-block;
+    padding: 10px;
+}
+/* padding bottom differs (TRBL is the order shorthand follows) to space it from the reviews */
+.coldCream{
+    display: inline-block;
+    padding: 10px 10px 35px 10px;
+}
+/* changing review text, changing how it wraps, centering it, offsetting underlines used, and adding a bg colour */
+.reviews{
+    padding: 5px 20px 5px 20px;
+    width: 600px;
+    height: auto;
+    text-wrap: auto;
+    text-underline-offset: 3px;
+    font-size: 18px;
+    margin: auto;
+    background-color: #aaaaaa;
+}
+/* increasing size of font for review signatures */
+.signature{
+    text-align: center;
+    font-size: 24px;
+}
+/* centering shop content parent element */
+.shop-content{
+    margin: auto;
+    text-align: center;
+}
+/* displaying each shop item inline-block */
+.shopOptions{
+    display: inline-block;
+    padding: 0 20px 20px 20px;
+}
+/* centering about us section */
+.about-us{
+    text-align: center;
+    margin: auto;
+}
+/* about paragraph, flex used for wrapping and changing size of paragraph */
+.about-content{
+    flex: 1;
+    font-size: 20px;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+/* centering video and positioning it proportionately from footer */
+.about-video{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+/* making content wider and centering it */
+.div-content{
+    width: 80vh;
+    margin: 0;
+    justify-content: center;
+}
+/* centering figures for product pages */
+main > figure{
+    margin: auto;
+    text-align: center;
+}
+/* product page image size default */
+.prod-img{
+    width: 60vh;
+    height: 40vh;
+}
+/* product page captions, spaced evenly from images */
+.prod-caption{
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+/* centering product page pricing */
+.prod-price{
+    text-align: center;
+}
+/* span used in pricing, used to italicize "+ shipping" part and change its font from the pricing script */
+.shipping{
+    font-style: italic;
+    font-family: "IM Fell DW Pica", sans-serif;
+    font-size: 18px;
+}
+/* product description font centered and sized */
+.prod-desc{
+    text-align: center;
+    font-size: 18px;
+    width: 80vh;
+    margin: auto;
+}
+/* changing margin for button to move it around, border-radius smooths the corners, cursor makes the cursor change to a pointer when moused over, and changing size of it using font-size */
+.prod-submit{
+    margin: 25px 0 25px 585px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* different image size and padding for variability in image sizes */
+.rouge-img{
+    width: 50vh;
+    height: 50vh;
+    padding-bottom: 5px;
+}
+/* different image size and padding for variability in image sizes */
+.cream-img{
+    width: 45vh;
+    height: 45vh;
+    padding-bottom: 5px;
+}
+/* parent element of contact form section */
+.contact-parent{
+    text-align: center;
+    margin: auto;
+}
+/* centering and position text in contact form */
+.contact-text{
+    width: 35%;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+/* displaying contact form elements in block and enlarging them with font-size */
+.your-name{
+    display: inline-block;
+    font-size: 16px;
+}
+.your-email{
+    display: inline-block;
+    font-size: 16px;
+}
+/* different margin top as this element falls down with the width as is */
+.your-number{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* formatting info for number, moved around, shrunk, and changed to a more legible font at a smaller size */
+.contact-caption{
+    font-size: 10px;
+    position: relative;
+    bottom: 6px;
+    font-family: "Roboto", sans-serif;
+}
+/* not allowing user to resize text area, resizing it myself, changing the font, spacing it from the bottom */
+textarea{
+    resize: none;
+    width: 50vh;
+    height: 20vh;
+    padding-bottom: 19px;
+    font-family: "IM Fell DW Pica", sans-serif;
+}
+/* changing font for inputs in contact form */
+input{
+    font-family: "IM Fell DW Pica", sans-serif;
+    padding: 5px;
+}
+/* moving submit button for contact form around, giving it some spacing with padding, curving the corners with border radius, and changing the size of it with font size*/
+.submit-contact{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    left: 50px;
+    bottom: 60px;
+    font-size: 20px;
+    border-radius: 12px;
+    /* making cursor change to a pointer */
+    cursor: pointer;
+}
